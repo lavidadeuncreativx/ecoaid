@@ -29,8 +29,8 @@
                 <div class="flex items-center gap-8">
                     <div class="flex items-center gap-2">
                         <!-- Logo Image Replacement -->
-                        <img src="/images/logo-nav.png?v=6" alt="EcoAid"
-                            class="h-12 w-auto object-contain hover:scale-105 transition-transform mix-blend-multiply">
+                        <img src="/images/logo-nav.svg" alt="EcoAid"
+                            class="h-12 w-auto object-contain hover:scale-105 transition-transform">
                     </div>
                     <nav class="hidden lg:flex gap-6 text-sm font-semibold text-muted">
                         <a class="hover:text-brandGreen transition-colors" href="#">Tela RPET</a>
@@ -135,8 +135,8 @@
                         que han confiado en nuestro producto</h4>
                     <div class="overflow-hidden w-full relative">
                         <!-- animate-[scroll_40s_linear_infinite] uses the keyframes defined in style.css -->
-                        <!-- Width calculation: 26 logos * 250px (approx width+gap) -->
-                        <div class="flex w-[calc(250px*26)] animate-[scroll_80s_linear_infinite] items-center gap-16">
+                        <!-- Width calculation: Fixed overlapping by using w-max to let content define width -->
+                        <div class="flex w-max animate-[scroll_80s_linear_infinite] items-center gap-16">
                             <!-- Brand List (Real SVGs) -->
                             <div
                                 class="flex items-center gap-16 px-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
