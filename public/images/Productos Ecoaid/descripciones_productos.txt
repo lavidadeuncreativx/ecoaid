@@ -1,0 +1,247 @@
+DESCRIPCIONES DE PRODUCTOS (Eco-Aid)
+
+Archivo: bolsa-2x1-nutrioli.svg
+Producto: Bolsa 2 x 1
+Descripción: Bolsa en tela de PET Eco-Aid con capacidad de carga de 26 kg. Bolsa pequeña integrada como funda o para uso por separado con asa larga.
+Medidas: Alto: 60 cm | Ancho: 56 cm | Base: 10 cm
+
+------------------------------------------------------------
+
+Archivo: bolsa-2x1-africam-safari.svg
+Producto: Bolsa 2 x 1
+Descripción: Bolsa en tela de PET Eco-Aid con capacidad de carga de 26 kg. Bolsa pequeña integrada como funda o para uso por separado con asa larga.
+Medidas: Alto: 60 cm | Ancho: 56 cm | Base: 10 cm
+
+------------------------------------------------------------
+
+Archivo: bolsa-2x1-mini-africam-safari.svg
+Producto: Bolsa 2 x 1
+Descripción: Bolsa en tela de PET Eco-Aid con capacidad de carga de 26 kg. Bolsa pequeña integrada como funda o para uso por separado con asa larga.
+Medidas: Alto: 60 cm | Ancho: 56 cm | Base: 10 cm
+
+------------------------------------------------------------
+
+Archivo: bolsa-mediana-asa-continua-coca-cola-femsa.svg
+Producto: Bolsa mediana de asa continua
+Descripción: Bolsa en tela de PET Eco-Aid de asa continua. Base sin costuras para una mayor capacidad de carga.
+Medidas: Alto: 40 cm | Ancho: 35 cm | Base: 10 cm
+
+------------------------------------------------------------
+
+Archivo: bolsa-mediana-asa-continua-corona-extra.svg
+Producto: Bolsa mediana de asa continua
+Descripción: Bolsa en tela de PET Eco-Aid de asa continua. Base sin costuras para una mayor capacidad de carga.
+Medidas: Alto: 40 cm | Ancho: 35 cm | Base: 10 cm
+
+------------------------------------------------------------
+
+Archivo: bolsa-mediana-asa-continua-home-interiors.svg
+Producto: Bolsa mediana de asa continua
+Descripción: Bolsa en tela de PET Eco-Aid de asa continua. Base sin costuras para una mayor capacidad de carga.
+Medidas: Alto: 40 cm | Ancho: 35 cm | Base: 10 cm
+
+------------------------------------------------------------
+
+Archivo: morral-azul-ciclado.svg
+Producto: Morral
+Descripción: Morral en tela de PET Eco-Aid. Asas dobles de cordón grueso.
+Medidas: Alto: 40 cm | Ancho: 35 cm | Base: 10 cm
+
+------------------------------------------------------------
+
+Archivo: morral-azul-nombres.svg
+Producto: Morral
+Descripción: Morral en tela de PET Eco-Aid. Asas dobles de cordón grueso.
+Medidas: Alto: 40 cm | Ancho: 35 cm | Base: 10 cm
+
+------------------------------------------------------------
+
+Archivo: morral-azul-puntos.svg
+Producto: Morral
+Descripción: Morral en tela de PET Eco-Aid. Asas dobles de cordón grueso.
+Medidas: Alto: 40 cm | Ancho: 35 cm | Base: 10 cm
+
+------------------------------------------------------------
+
+Archivo: bolsa-boton-asa-semirigida-natura.svg
+Producto: Bolsa con botón y asa semi-rígida
+Descripción: Bolsa en tela de PET Eco-Aid. Asas semi-rígidas. Se puede cerrar doblándola y enlazándola con el botón.
+Medidas: Alto: 30 cm | Ancho: 45 cm | Base: 10 cm
+
+------------------------------------------------------------
+
+Archivo: bolsa-boton-asa-semirigida-natura-doblada.svg
+Producto: Bolsa con botón y asa semi-rígida
+Descripción: Bolsa en tela de PET Eco-Aid. Asas semi-rígidas. Se puede cerrar doblándola y enlazándola con el botón.
+Medidas: Alto: 30 cm | Ancho: 45 cm | Base: 10 cm
+
+------------------------------------------------------------
+
+Archivo: bolsa-boton-asa-semirigida-san-pablo.svg
+Producto: Bolsa con botón y asa semi-rígida
+Descripción: Bolsa en tela de PET Eco-Aid. Asas semi-rígidas. Se puede cerrar doblándola y enlazándola con el botón.
+Medidas: Alto: 30 cm | Ancho: 45 cm | Base: 10 cm
+
+------------------------------------------------------------
+
+Archivo: bolsa-boton-asa-semirigida-san-pablo-doblada.svg
+Producto: Bolsa con botón y asa semi-rígida
+Descripción: Bolsa en tela de PET Eco-Aid. Asas semi-rígidas. Se puede cerrar doblándola y enlazándola con el botón.
+Medidas: Alto: 30 cm | Ancho: 45 cm | Base: 10 cm
+
+------------------------------------------------------------
+
+Archivo: bolsa-chica-doble-vista-corona-frente.svg
+Producto: Bolsa chica doble vista
+Descripción: Bolsa en tela gruesa fusionada de PET Eco-Aid reversible. Asas con bordado en zig-zag.
+Medidas: Alto: 32 cm | Largo: 40 cm | Base: 20 cm
+
+------------------------------------------------------------
+
+Archivo: bolsa-chica-doble-vista-corona-reverso.svg
+Producto: Bolsa chica doble vista
+Descripción: Bolsa en tela gruesa fusionada de PET Eco-Aid reversible. Asas con bordado en zig-zag.
+Medidas: Alto: 32 cm | Largo: 40 cm | Base: 20 cm
+
+------------------------------------------------------------
+
+Archivo: porta-ipad-cerrado.svg
+Producto: Porta iPad
+Descripción: Porta iPad en tela de PET Eco-Aid. Con marco semi-rígido, broche para cerrar y orificios para conexiones.
+Medidas: Alto: 26.5 cm | Largo: 21 cm | Lomo: 2 cm
+
+------------------------------------------------------------
+
+Archivo: porta-ipad-abierto.svg
+Producto: Porta iPad
+Descripción: Porta iPad en tela de PET Eco-Aid. Con marco semi-rígido, broche para cerrar y orificios para conexiones.
+Medidas: Alto: 26.5 cm | Largo: 21 cm | Lomo: 2 cm
+
+------------------------------------------------------------
+
+Archivo: porta-ipad-cerrado-frontal.svg
+Producto: Porta iPad
+Descripción: Porta iPad en tela de PET Eco-Aid. Con marco semi-rígido, broche para cerrar y orificios para conexiones.
+Medidas: Alto: 26.5 cm | Largo: 21 cm | Lomo: 2 cm
+
+------------------------------------------------------------
+
+Archivo: portalap-chica-la-red-de-la-gente.svg
+Producto: Portalap chica
+Descripción: Porta laptop en tela de PET Eco-Aid. Con cierre y forro, asas cortas.
+Medidas: Alto: 32 cm | Largo: 40 cm | Base: 4 cm
+
+------------------------------------------------------------
+
+Archivo: portalap-chica-diseno-negro.svg
+Producto: Portalap chica
+Descripción: Porta laptop en tela de PET Eco-Aid. Con cierre y forro, asas cortas.
+Medidas: Alto: 32 cm | Largo: 40 cm | Base: 4 cm
+
+------------------------------------------------------------
+
+Archivo: portalap-grande-diseno-multicolor.svg
+Producto: Portalap grande
+Descripción: Porta laptop en tela de PET Eco-Aid. Con cierre y forro, asas cortas y asa larga ajustable.
+Medidas: Alto: 28 cm | Largo: 40 cm | Base: 5 cm | Asa: 140 x 5 cm
+
+------------------------------------------------------------
+
+Archivo: portalap-grande-diseno-azul.svg
+Producto: Portalap grande
+Descripción: Porta laptop en tela de PET Eco-Aid. Con cierre y forro, asas cortas y asa larga ajustable.
+Medidas: Alto: 28 cm | Largo: 40 cm | Base: 5 cm | Asa: 140 x 5 cm
+
+------------------------------------------------------------
+
+Archivo: bolsa-mediana-asas-cosidas-cuidando-nuestro-planeta.svg
+Producto: Bolsa mediana asas cosidas
+Descripción: Bolsa en tela de PET Eco-Aid. Con dos asas cosidas.
+Medidas: Alto: 33 cm | Ancho: 42 cm | Base: 7.5 cm
+
+------------------------------------------------------------
+
+Archivo: bolsa-mediana-asas-cosidas-petstar-coca-cola.svg
+Producto: Bolsa mediana asas cosidas
+Descripción: Bolsa en tela de PET Eco-Aid. Con dos asas cosidas.
+Medidas: Alto: 33 cm | Ancho: 42 cm | Base: 7.5 cm
+
+------------------------------------------------------------
+
+Archivo: gorra-ecoaid-vista-lateral.svg
+Producto: Gorra
+Descripción: Gorra en tela de PET Eco-Aid con velcro ajustable. Medida estándar.
+Medidas: Medida estándar
+
+------------------------------------------------------------
+
+Archivo: gorra-ciel-vista-trasera.svg
+Producto: Gorra
+Descripción: Gorra en tela de PET Eco-Aid con velcro ajustable. Medida estándar.
+Medidas: Medida estándar
+
+------------------------------------------------------------
+
+Archivo: gorra-ecoaid-vista-frontal.svg
+Producto: Gorra
+Descripción: Gorra en tela de PET Eco-Aid con velcro ajustable. Medida estándar.
+Medidas: Medida estándar
+
+------------------------------------------------------------
+
+Archivo: gorra-ciel-vista-lateral.svg
+Producto: Gorra
+Descripción: Gorra en tela de PET Eco-Aid con velcro ajustable. Medida estándar.
+Medidas: Medida estándar
+
+------------------------------------------------------------
+
+Archivo: estuche-dupont.svg
+Producto: Estuche
+Descripción: Estuche en tela de PET Eco-Aid. Con cierre y forro.
+Medidas: Alto: 10 cm | Largo: 20 cm | Base: 5 cm
+
+------------------------------------------------------------
+
+Archivo: estuche-pet-100.svg
+Producto: Estuche
+Descripción: Estuche en tela de PET Eco-Aid. Con cierre y forro.
+Medidas: Alto: 10 cm | Largo: 20 cm | Base: 5 cm
+
+------------------------------------------------------------
+
+Archivo: cosmetiquera-roja.svg
+Producto: Cosmetiquera
+Descripción: Cosmetiquera en tela de PET Eco-Aid. Con cierre y forro.
+Medidas: Alto: 13 cm | Largo: 23 cm | Base: 5 cm
+
+------------------------------------------------------------
+
+Archivo: cosmetiquera-azul-polka.svg
+Producto: Cosmetiquera
+Descripción: Cosmetiquera en tela de PET Eco-Aid. Con cierre y forro.
+Medidas: Alto: 13 cm | Largo: 23 cm | Base: 5 cm
+
+------------------------------------------------------------
+
+Archivo: textiles-ecoaid-muestrario.svg
+Producto: Textiles Eco-Aid (muestrario)
+Descripción: Muestrario de textiles Eco-Aid elaborados con 100% PET post-consumo, reciclado y reciclable (aplicaciones textiles de alta calidad).
+Medidas: N/A
+
+------------------------------------------------------------
+
+Archivo: bolsa-muestra-roja-grande.svg
+Producto: Bolsa (muestra)
+Descripción: Bolsa de muestra Eco-Aid (aplicación textil en PET reciclado).
+Medidas: N/A
+
+------------------------------------------------------------
+
+Archivo: bolsa-muestra-roja-mini.svg
+Producto: Bolsa (muestra)
+Descripción: Bolsa de muestra Eco-Aid (aplicación textil en PET reciclado).
+Medidas: N/A
+
+------------------------------------------------------------
+
