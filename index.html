@@ -30,7 +30,7 @@
                     <div class="flex items-center gap-2">
                         <!-- Logo Image Replacement -->
                         <img src="/images/logo-nav.svg" alt="EcoAid"
-                            class="h-12 w-auto object-contain hover:scale-105 transition-transform">
+                            class="h-20 w-auto object-contain hover:scale-105 transition-transform">
                     </div>
                     <nav class="hidden lg:flex gap-6 text-sm font-semibold text-muted">
                         <a class="hover:text-brandGreen transition-colors" href="#">Tela RPET</a>
@@ -79,54 +79,25 @@
                                 Envíos a todo el país
                             </li>
                         </ul>
-                        <div class="flex flex-col sm:flex-row gap-4 mb-6 hero-element">
+                        <div class="flex flex-wrap gap-4 hero-element">
                             <button
-                                class="bg-brandGreen text-white px-10 py-4 rounded-full font-black text-lg shadow-lg shadow-brandGreen/20 hover:scale-[1.02] transition-transform trigger-scroll-cotizar">Cotizar
-                                tela (metro o rollo)</button>
-                            <button
-                                class="bg-white border-2 border-gray-100 px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-50 transition-all text-text shadow-sm">Ver
-                                catálogo</button>
+                                class="bg-brandGreen text-white px-8 py-4 rounded-full font-black text-lg shadow-xl shadow-brandGreen/20 hover:shadow-brandGreen/40 hover:-translate-y-1 transition-all flex items-center gap-2 trigger-scroll-cotizar">
+                                <span class="material-symbols-outlined">request_quote</span>
+                                Solicitar cotización
+                            </button>
+                            <button onclick="window.open('/catalogo.pdf', '_blank')"
+                                class="bg-white text-text border-2 border-gray-100 px-8 py-4 rounded-full font-bold text-lg hover:border-brandGreen hover:text-brandGreen transition-all flex items-center gap-2">
+                                <span class="material-symbols-outlined">menu_book</span>
+                                Ver catálogo
+                            </button>
                         </div>
                         <p class="text-sm text-gray-400 font-bold hero-element">¿También quieres producto terminado? Se
                             cotiza por proyecto.</p>
                     </div>
-                    <div class="relative h-[600px] flex items-center justify-center hero-visual">
-                        <div class="absolute inset-0 bg-brandGreen/10 rounded-full blur-3xl scale-75"></div>
-                        <div class="absolute top-20 right-10 w-48 h-[350px] bg-white rounded-3xl shadow-2xl rotate-12 overflow-hidden border border-gray-100 flex flex-col parallax-layer"
-                            data-speed="0.05">
-                            <img alt="Roll 1" class="h-full object-cover grayscale-[0.1] brightness-105"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1iIhM8NzKygF1_d0poOOfMYP2INjFOpFAAeRLk6wDADPKWFJi9Q7BjbVdC92zMQuQ-B9zOXW1pDsmkt9iT4C7oc25Ion8IQGAwSf43VAGHYJRsZdUx0Yw2Z-OewJhC7JHqjDOSNy4P9vXogcQpnxN7hlLH2hEpHMdpmZAlOePjQtPZgBeHVxZVzkc1gj_sX-CrmOq1agzWOrekfME1g59Dks_GKoo6KFjZjwc01Jv4EkwuUUucIDNdxh5XzfJpSPy0dPTIQ2k4DI" />
-                        </div>
-                        <div class="absolute bottom-10 left-10 w-48 h-[350px] bg-white rounded-3xl shadow-2xl -rotate-12 overflow-hidden border border-gray-100 flex flex-col z-10 parallax-layer"
-                            data-speed="0.08">
-                            <img alt="Roll 2" class="h-full object-cover grayscale-[0.1] brightness-105"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjV7jjdtGmWB1umrNlsB41sg5c6YrSXmUn6cN1Ab3DXtY2pC1s4vGB51bW3DltapKy1LTWNUvJZQ8nLEUW-2GcFy6NkqyUnXjEOM55keWqk8K6IMbU6tJ7OWlKopNFTIC7P1D2-3iTodu2Xvvq6jNOF-bGj_pIR5YF27BVaFzU2t9IECYXxAFlaJkevB5iWNpO9tjvAr5AJKEPEmCHBSpN0q0mpKxFnLSeznkRLihuWGvqlKaPEK6OCzomiopvaa2WB4m-wkqqyaA" />
-                        </div>
-                        <div class="absolute top-0 left-20 w-32 h-32 rounded-2xl shadow-2xl overflow-hidden -rotate-6 z-20 border-4 border-white parallax-layer"
-                            data-speed="0.1">
-                            <img alt="Floating Cap" class="w-full h-full object-cover"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaR24T5oQF_-hhsFcfyck13q0tP8VZZTCmjl4ioCHDdFUwMbqfMApG2JfewfwrFOPvrCH1C-ZJP2InnHKK76IipxhNsZVlKUogakmkPag68zGE_awE7mDCNcOvT2-jhxNnLT1EAfixLF2Rr1esmi_uLLvErmknFMz2z9wE0VEDs3ldzIhGtQ-a-3DscY_k4aFLv5ezhIrz6-Y6eZoXqp_WYUN_tvLXfCY3IoknMa6QQrCPUGRB2meZb6f62NIGxLrJgb5cUlcX5jw" />
-                        </div>
-                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-2xl shadow-2xl overflow-hidden rotate-12 z-20 border-4 border-white parallax-layer"
-                            data-speed="0.02">
-                            <img alt="Floating Bag" class="w-full h-full object-cover"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnwPiq6VHhA6fwxUIyQ0nyR5ySwuPHOHKHM8ECJ68UdNQmbW5ZrYAVK2i43SPNkomto_bb8kDPNnxgDFZ9FjWnO3ebT-u1ma6Afeg6S1xvRV3F_rRSY2s8n54_NZAqZVa28WnueuvZTGBzX_qKpn8I-ZOdMeqIMarP-XAyU-MjHofgIsTa9mwJRl3lioCN5WWJai-_REov7LAt4wztCIDiX1hF8oQtT4a1JXxs__aKgO4lg4ye9nI0fIwSvXDG3mRmKt3BKbIkTnQ" />
-                        </div>
-                        <div class="absolute bottom-0 right-20 w-36 h-36 rounded-2xl shadow-2xl overflow-hidden -rotate-12 z-20 border-4 border-white parallax-layer"
-                            data-speed="0.12">
-                            <img alt="Floating Pouch" class="w-full h-full object-cover"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvjuTY9JpFuOLizp62JBIU_yekdAQKc6wi91ErIidCVJ9tJiawf1w3rOJwm-ic1sdFqyWeTjOnbyyB6J8R33pVm7bmZvlNYZ52IMy9RshYfMWmhrvOmqs5jHFBaE_fNgsqIt5Nh2YRG5heJgzmasxQ0QMq2FU0t9qdAib5IW4vbKxx1K7J1sFi5PZreVv94msf9wM3zxDu1IZqRzfaqKYdqvQ4zbtbUBrSFmDiXfRiXFot_uUS23jtsT9TwarCJyl-FuGZd0_aOwE" />
-                        </div>
-                        <div class="absolute top-1/3 -right-4 glass p-4 rounded-2xl shadow-xl border border-white/50 z-30 flex items-center gap-3 parallax-layer"
-                            data-speed="0.06">
-                            <div class="w-10 h-10 bg-brandLime rounded-full flex items-center justify-center">
-                                <span class="material-symbols-outlined text-text text-lg font-bold">eco</span>
-                            </div>
-                            <div>
-                                <p class="font-black text-sm text-text uppercase tracking-tight">100% Reciclado</p>
-                                <p class="text-xs font-bold opacity-60 text-text">Grado Industrial</p>
-                            </div>
-                        </div>
+                    <div class="relative hero-image-container flex justify-center items-center">
+                        <!-- Hero Image Replacement -->
+                        <img src="/images/hero section image.png" alt="Rollos de tela ecológica"
+                            class="w-full h-auto object-contain max-h-[700px]">
                     </div>
                 </section>
 
