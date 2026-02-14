@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ECOAID | Tela RPET y Productos Reciclados</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="text-everglade overflow-x-hidden antialiased bg-bg">
+    <div id="app">
+        <!-- TOP BAR: Color corrected to Dark Green (brandDeep) -->
+        <div class="w-full bg-brandDeep py-2 text-center relative z-50">
+            <p class="text-[12px] font-medium text-white tracking-wide uppercase">
+                Venta por metro o por rollo. Atención a marcas, fabricantes y compras.
+            </p>
+        </div>
+
+        <header class="sticky top-0 z-40 h-[72px] flex items-center transition-all duration-200" id="main-header">
+            <div class="container mx-auto px-6 flex justify-between items-center">
+                <div class="flex items-center gap-8">
+                    <div class="flex items-center gap-2">
+                        <!-- Logo: Tree Icon + Text -->
+                        <span class="material-symbols-outlined text-brandGreen text-4xl font-bold">park</span>
+                        <span class="text-2xl font-black tracking-tighter text-text uppercase">ECOAID</span>
+                    </div>
+                    <nav class="hidden lg:flex gap-6 text-sm font-semibold text-muted">
+                        <a class="hover:text-brandGreen transition-colors" href="#">Tela RPET</a>
+                        <a class="hover:text-brandGreen transition-colors" href="#">Aplicaciones</a>
+                        <a class="hover:text-brandGreen transition-colors" href="#">Proceso</a>
+                        <a class="hover:text-brandGreen transition-colors" href="#">Impacto</a>
+                        <a class="hover:text-brandGreen transition-colors" href="#">Casos</a>
+                        <a class="hover:text-brandGreen transition-colors" href="#faq">FAQ</a>
+                    </nav>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button onclick="window.open('/catalogo.pdf', '_blank')"
+                        class="hidden md:block px-5 py-2 text-sm font-bold text-text2 hover:bg-white/50 rounded-full transition-all">Ver
+                        catálogo</button>
+                    <button
+                        class="bg-brandGreen text-white px-7 py-2.5 rounded-full text-sm font-black shadow-sm hover:brightness-110 transition-all uppercase tracking-tight trigger-scroll-cotizar">Cotizar</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="organic-bg relative">
+            <!-- Hero Section: Removed parallax background branches -->
+            <div class="container mx-auto px-6 py-12 lg:py-20 relative z-10" id="hero">
+                <section class="grid lg:grid-cols-2 gap-16 items-center mb-24">
+                    <div class="max-w-2xl hero-content">
+                        <h1
+                            class="text-5xl lg:text-[64px] leading-[1.05] font-black text-text mb-6 tracking-tight hero-element">
+                            Tela ecológica hecha con <span class="text-brandGreen">botellas PET recicladas</span>.
+                        </h1>
+                        <p class="text-xl text-muted mb-8 leading-relaxed font-medium hero-element">
+                            Ideal para fabricar bolsas, mochilas, gorras, uniformes y promocionales sostenibles. La
+                            compras por metro o por rollo y te ayudamos a elegir el tipo de tela correcto para tu
+                            proyecto.
+                        </p>
+                        <ul class="space-y-4 mb-10 hero-element">
+                            <li class="flex items-center gap-3 font-bold text-text/80">
+                                <span class="material-symbols-outlined text-brandGreen text-2xl">verified_user</span>
+                                Certificación GRS (Global Recycled Standard)
+                            </li>
+                            <li class="flex items-center gap-3 font-bold text-text/80">
+                                <span class="material-symbols-outlined text-brandGreen text-2xl">straighten</span>
+                                Venta desde 1 metro lineal
+                            </li>
+                            <li class="flex items-center gap-3 font-bold text-text/80">
+                                <span class="material-symbols-outlined text-brandGreen text-2xl">local_shipping</span>
+                                Envíos a todo el país
+                            </li>
+                        </ul>
+                        <div class="flex flex-col sm:flex-row gap-4 mb-6 hero-element">
+                            <button
+                                class="bg-brandGreen text-white px-10 py-4 rounded-full font-black text-lg shadow-lg shadow-brandGreen/20 hover:scale-[1.02] transition-transform trigger-scroll-cotizar">Cotizar
+                                tela (metro o rollo)</button>
+                            <button
+                                class="bg-white border-2 border-gray-100 px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-50 transition-all text-text shadow-sm">Ver
+                                catálogo</button>
+                        </div>
+                        <p class="text-sm text-gray-400 font-bold hero-element">¿También quieres producto terminado? Se
+                            cotiza por proyecto.</p>
+                    </div>
+                    <div class="relative h-[600px] flex items-center justify-center hero-visual">
+                        <div class="absolute inset-0 bg-brandGreen/10 rounded-full blur-3xl scale-75"></div>
+                        <div class="absolute top-20 right-10 w-48 h-[350px] bg-white rounded-3xl shadow-2xl rotate-12 overflow-hidden border border-gray-100 flex flex-col parallax-layer"
+                            data-speed="0.05">
+                            <img alt="Roll 1" class="h-full object-cover grayscale-[0.1] brightness-105"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1iIhM8NzKygF1_d0poOOfMYP2INjFOpFAAeRLk6wDADPKWFJi9Q7BjbVdC92zMQuQ-B9zOXW1pDsmkt9iT4C7oc25Ion8IQGAwSf43VAGHYJRsZdUx0Yw2Z-OewJhC7JHqjDOSNy4P9vXogcQpnxN7hlLH2hEpHMdpmZAlOePjQtPZgBeHVxZVzkc1gj_sX-CrmOq1agzWOrekfME1g59Dks_GKoo6KFjZjwc01Jv4EkwuUUucIDNdxh5XzfJpSPy0dPTIQ2k4DI" />
+                        </div>
+                        <div class="absolute bottom-10 left-10 w-48 h-[350px] bg-white rounded-3xl shadow-2xl -rotate-12 overflow-hidden border border-gray-100 flex flex-col z-10 parallax-layer"
+                            data-speed="0.08">
+                            <img alt="Roll 2" class="h-full object-cover grayscale-[0.1] brightness-105"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjV7jjdtGmWB1umrNlsB41sg5c6YrSXmUn6cN1Ab3DXtY2pC1s4vGB51bW3DltapKy1LTWNUvJZQ8nLEUW-2GcFy6NkqyUnXjEOM55keWqk8K6IMbU6tJ7OWlKopNFTIC7P1D2-3iTodu2Xvvq6jNOF-bGj_pIR5YF27BVaFzU2t9IECYXxAFlaJkevB5iWNpO9tjvAr5AJKEPEmCHBSpN0q0mpKxFnLSeznkRLihuWGvqlKaPEK6OCzomiopvaa2WB4m-wkqqyaA" />
+                        </div>
+                        <div class="absolute top-0 left-20 w-32 h-32 rounded-2xl shadow-2xl overflow-hidden -rotate-6 z-20 border-4 border-white parallax-layer"
+                            data-speed="0.1">
+                            <img alt="Floating Cap" class="w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaR24T5oQF_-hhsFcfyck13q0tP8VZZTCmjl4ioCHDdFUwMbqfMApG2JfewfwrFOPvrCH1C-ZJP2InnHKK76IipxhNsZVlKUogakmkPag68zGE_awE7mDCNcOvT2-jhxNnLT1EAfixLF2Rr1esmi_uLLvErmknFMz2z9wE0VEDs3ldzIhGtQ-a-3DscY_k4aFLv5ezhIrz6-Y6eZoXqp_WYUN_tvLXfCY3IoknMa6QQrCPUGRB2meZb6f62NIGxLrJgb5cUlcX5jw" />
+                        </div>
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-2xl shadow-2xl overflow-hidden rotate-12 z-20 border-4 border-white parallax-layer"
+                            data-speed="0.02">
+                            <img alt="Floating Bag" class="w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnwPiq6VHhA6fwxUIyQ0nyR5ySwuPHOHKHM8ECJ68UdNQmbW5ZrYAVK2i43SPNkomto_bb8kDPNnxgDFZ9FjWnO3ebT-u1ma6Afeg6S1xvRV3F_rRSY2s8n54_NZAqZVa28WnueuvZTGBzX_qKpn8I-ZOdMeqIMarP-XAyU-MjHofgIsTa9mwJRl3lioCN5WWJai-_REov7LAt4wztCIDiX1hF8oQtT4a1JXxs__aKgO4lg4ye9nI0fIwSvXDG3mRmKt3BKbIkTnQ" />
+                        </div>
+                        <div class="absolute bottom-0 right-20 w-36 h-36 rounded-2xl shadow-2xl overflow-hidden -rotate-12 z-20 border-4 border-white parallax-layer"
+                            data-speed="0.12">
+                            <img alt="Floating Pouch" class="w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvjuTY9JpFuOLizp62JBIU_yekdAQKc6wi91ErIidCVJ9tJiawf1w3rOJwm-ic1sdFqyWeTjOnbyyB6J8R33pVm7bmZvlNYZ52IMy9RshYfMWmhrvOmqs5jHFBaE_fNgsqIt5Nh2YRG5heJgzmasxQ0QMq2FU0t9qdAib5IW4vbKxx1K7J1sFi5PZreVv94msf9wM3zxDu1IZqRzfaqKYdqvQ4zbtbUBrSFmDiXfRiXFot_uUS23jtsT9TwarCJyl-FuGZd0_aOwE" />
+                        </div>
+                        <div class="absolute top-1/3 -right-4 glass p-4 rounded-2xl shadow-xl border border-white/50 z-30 flex items-center gap-3 parallax-layer"
+                            data-speed="0.06">
+                            <div class="w-10 h-10 bg-brandLime rounded-full flex items-center justify-center">
+                                <span class="material-symbols-outlined text-text text-lg font-bold">eco</span>
+                            </div>
+                            <div>
+                                <p class="font-black text-sm text-text uppercase tracking-tight">100% Reciclado</p>
+                                <p class="text-xs font-bold opacity-60 text-text">Grado Industrial</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-32 py-12 border-y border-gray-100/50 reveal-section">
+                    <h4 class="text-center text-xs font-black uppercase tracking-widest text-gray-400 mb-10">Empresas
+                        que han confiado en nuestro producto</h4>
+                    <div class="overflow-hidden w-full relative">
+                        <!-- animate-[scroll_40s_linear_infinite] uses the keyframes defined in style.css -->
+                        <div class="flex w-[calc(250px*16)] animate-[scroll_60s_linear_infinite] items-center gap-16">
+                            <!-- Brand List Original -->
+                            <div
+                                class="flex items-center gap-16 px-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Coca-Cola&font=roboto"
+                                    alt="Coca-Cola" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Corona&font=roboto"
+                                    alt="Corona" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Ciel&font=roboto" alt="Ciel"
+                                    class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=CONANP&font=roboto"
+                                    alt="CONANP" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=UBS&font=roboto" alt="UBS"
+                                    class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Natura&font=roboto"
+                                    alt="Natura" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Nutrioli&font=roboto"
+                                    alt="Nutrioli" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=SEMARNAT&font=roboto"
+                                    alt="SEMARNAT" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Africam+Safari&font=roboto"
+                                    alt="Africam Safari" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Greenpeace&font=roboto"
+                                    alt="Greenpeace" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=HIR+Casa&font=roboto"
+                                    alt="HIR Casa" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=MANE&font=roboto" alt="MANE"
+                                    class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Feher&font=roboto"
+                                    alt="Feher & Feher" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Tec+Mty&font=roboto"
+                                    alt="Tec Monterrey" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Recimex&font=roboto"
+                                    alt="Recimex" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Sustenta&font=roboto"
+                                    alt="Sustenta" class="h-16 object-contain mix-blend-multiply">
+                            </div>
+                            <!-- Duplicated for loop -->
+                            <div
+                                class="flex items-center gap-16 px-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Coca-Cola&font=roboto"
+                                    alt="Coca-Cola" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Corona&font=roboto"
+                                    alt="Corona" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Ciel&font=roboto" alt="Ciel"
+                                    class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=CONANP&font=roboto"
+                                    alt="CONANP" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=UBS&font=roboto" alt="UBS"
+                                    class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Natura&font=roboto"
+                                    alt="Natura" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Nutrioli&font=roboto"
+                                    alt="Nutrioli" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=SEMARNAT&font=roboto"
+                                    alt="SEMARNAT" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Africam+Safari&font=roboto"
+                                    alt="Africam Safari" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Greenpeace&font=roboto"
+                                    alt="Greenpeace" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=HIR+Casa&font=roboto"
+                                    alt="HIR Casa" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=MANE&font=roboto" alt="MANE"
+                                    class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Feher&font=roboto"
+                                    alt="Feher & Feher" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Tec+Mty&font=roboto"
+                                    alt="Tec Monterrey" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Recimex&font=roboto"
+                                    alt="Recimex" class="h-16 object-contain mix-blend-multiply">
+                                <img src="https://placehold.co/150x80/e5e7eb/1f2937?text=Sustenta&font=roboto"
+                                    alt="Sustenta" class="h-16 object-contain mix-blend-multiply">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-32 reveal-section">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                        <div>
+                            <h2 class="text-3xl font-black mb-4 tracking-tight text-text">Trabajos reales en tela de PET
+                                reciclado</h2>
+                            <p class="text-muted max-w-xl font-medium">Hacemos productos textiles hechos a base de PET
+                                reciclado. Fabricamos gorras con tu marca… 100% PET reciclado post-consumo.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <button
+                                class="filter-chip active px-5 py-2 rounded-full border border-gray-200 text-sm font-bold hover:border-brandGreen transition-colors cursor-pointer text-text shadow-sm"
+                                data-filter="all">Todas</button>
+                            <button
+                                class="filter-chip px-5 py-2 rounded-full bg-white border border-gray-200 text-sm font-bold hover:border-brandGreen transition-colors cursor-pointer text-text shadow-sm"
+                                data-filter="gorras">Gorras</button>
+                            <button
+                                class="filter-chip px-5 py-2 rounded-full bg-white border border-gray-200 text-sm font-bold hover:border-brandGreen transition-colors cursor-pointer text-text shadow-sm"
+                                data-filter="eco">Eco promocionales</button>
+                            <button
+                                class="filter-chip px-5 py-2 rounded-full bg-white border border-gray-200 text-sm font-bold hover:border-brandGreen transition-colors cursor-pointer text-text shadow-sm"
+                                data-filter="mochilas">Mochilas</button>
+                            <button
+                                class="filter-chip px-5 py-2 rounded-full bg-white border border-gray-200 text-sm font-bold hover:border-brandGreen transition-colors cursor-pointer text-text shadow-sm"
+                                data-filter="bolsas">Bolsas</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12" id="catalog-grid">
+                        <div class="group catalog-item" data-category="gorras">
+                            <div
+                                class="rounded-large overflow-hidden mb-6 aspect-square bg-gray-100 shadow-sm border border-gray-100 relative">
+                                <img alt="Recycled baseball cap"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaR24T5oQF_-hhsFcfyck13q0tP8VZZTCmjl4ioCHDdFUwMbqfMApG2JfewfwrFOPvrCH1C-ZJP2InnHKK76IipxhNsZVlKUogakmkPag68zGE_awE7mDCNcOvT2-jhxNnLT1EAfixLF2Rr1esmi_uLLvErmknFMz2z9wE0VEDs3ldzIhGtQ-a-3DscY_k4aFLv5ezhIrz6-Y6eZoXqp_WYUN_tvLXfCY3IoknMa6QQrCPUGRB2meZb6f62NIGxLrJgb5cUlcX5jw" />
+                            </div>
+                            <h4 class="font-bold text-xl mb-1 text-text">Gorras RPET Premium</h4>
+                            <p class="text-sm text-gray-500 font-bold">Personalización completa para marcas</p>
+                        </div>
+                        <div class="group catalog-item" data-category="bolsas">
+                            <div
+                                class="rounded-large overflow-hidden mb-6 aspect-square bg-gray-100 shadow-sm border border-gray-100 relative">
+                                <img alt="Recycled tote bag"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnwPiq6VHhA6fwxUIyQ0nyR5ySwuPHOHKHM8ECJ68UdNQmbW5ZrYAVK2i43SPNkomto_bb8kDPNnxgDFZ9FjWnO3ebT-u1ma6Afeg6S1xvRV3F_rRSY2s8n54_NZAqZVa28WnueuvZTGBzX_qKpn8I-ZOdMeqIMarP-XAyU-MjHofgIsTa9mwJRl3lioCN5WWJai-_REov7LAt4wztCIDiX1hF8oQtT4a1JXxs__aKgO4lg4ye9nI0fIwSvXDG3mRmKt3BKbIkTnQ" />
+                            </div>
+                            <h4 class="font-bold text-xl mb-1 text-text">Bolsas Promocionales</h4>
+                            <p class="text-sm text-gray-500 font-bold">Sarga de alta resistencia técnica</p>
+                        </div>
+                        <div class="group catalog-item" data-category="mochilas">
+                            <div
+                                class="rounded-large overflow-hidden mb-6 aspect-square bg-gray-100 shadow-sm border border-gray-100 relative">
+                                <img alt="Recycled backpack"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvjuTY9JpFuOLizp62JBIU_yekdAQKc6wi91ErIidCVJ9tJiawf1w3rOJwm-ic1sdFqyWeTjOnbyyB6J8R33pVm7bmZvlNYZ52IMy9RshYfMWmhrvOmqs5jHFBaE_fNgsqIt5Nh2YRG5heJgzmasxQ0QMq2FU0t9qdAib5IW4vbKxx1K7J1sFi5PZreVv94msf9wM3zxDu1IZqRzfaqKYdqvQ4zbtbUBrSFmDiXfRiXFot_uUS23jtsT9TwarCJyl-FuGZd0_aOwE" />
+                            </div>
+                            <h4 class="font-bold text-xl mb-1 text-text">Mochilas Corporativas</h4>
+                            <p class="text-sm text-gray-500 font-bold">Loneta 100% Reciclada GRS</p>
+                        </div>
+                        <div class="group catalog-item" data-category="eco">
+                            <div
+                                class="rounded-large overflow-hidden mb-6 aspect-square bg-gray-100 shadow-sm border border-gray-100 relative">
+                                <img alt="Recycled fabric rolls"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjV7jjdtGmWB1umrNlsB41sg5c6YrSXmUn6cN1Ab3DXtY2pC1s4vGB51bW3DltapKy1LTWNUvJZQ8nLEUW-2GcFy6NkqyUnXjEOM55keWqk8K6IMbU6tJ7OWlKopNFTIC7P1D2-3iTodu2Xvvq6jNOF-bGj_pIR5YF27BVaFzU2t9IECYXxAFlaJkevB5iWNpO9tjvAr5AJKEPEmCHBSpN0q0mpKxFnLSeznkRLihuWGvqlKaPEK6OCzomiopvaa2WB4m-wkqqyaA" />
+                            </div>
+                            <h4 class="font-bold text-xl mb-1 text-text">Textiles Industriales</h4>
+                            <p class="text-sm text-gray-500 font-bold">Uniformes sostenibles de alto tráfico</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Cards Rounded -->
+                <section class="grid md:grid-cols-2 gap-8 mb-32 reveal-section">
+                    <div class="p-12 rounded-large bg-brandDeep text-white shadow-xl flex flex-col justify-between items-start h-[440px] border border-white/10 relative overflow-hidden transition-all duration-300 hover:scale-[1.01] cursor-pointer selection-card"
+                        id="card-solo-tela" onclick="selectType('solo_tela')">
+                        <div class="relative z-10">
+                            <span class="material-symbols-outlined text-4xl mb-6 text-brandLime">layers</span>
+                            <h3 class="text-4xl font-black mb-4 tracking-tight leading-tight">Solo tela<br />(metro o
+                                rollo)</h3>
+                            <p class="text-lg text-white/90 max-w-sm leading-relaxed font-bold">Si eres fabricante o
+                                tienes un taller propio, compra el insumo directamente con nosotros. Stock disponible.
+                            </p>
+                        </div>
+                        <button
+                            class="bg-brandGreen text-white px-8 py-4 rounded-full font-black hover:brightness-110 transition-all flex items-center gap-2 uppercase text-sm tracking-wide relative z-10">Ver
+                            tipos de tela <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+                    </div>
+                    <div class="p-12 rounded-large bg-white border border-gray-200 shadow-lg flex flex-col justify-between items-start h-[440px] relative overflow-hidden transition-all duration-300 hover:scale-[1.01] cursor-pointer selection-card"
+                        id="card-producto-terminado" onclick="selectType('producto_terminado')">
+                        <div class="relative z-10">
+                            <span
+                                class="material-symbols-outlined text-4xl mb-6 text-brandGreen">precision_manufacturing</span>
+                            <h3 class="text-4xl font-black mb-4 tracking-tight leading-tight text-text">Producto
+                                terminado<br />(por proyecto)</h3>
+                            <p class="text-lg text-gray-600 max-w-sm leading-relaxed font-bold">Diseñamos y fabricamos
+                                tus productos listos para entregar. Desde bolsas hasta uniformes de alta calidad.</p>
+                        </div>
+                        <button
+                            class="bg-gray-100 text-text px-8 py-4 rounded-full font-black hover:bg-gray-200 transition-all flex items-center gap-2 uppercase text-sm tracking-wide relative z-10">Cotizar
+                            proyecto <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+                    </div>
+                </section>
+
+                <section class="mb-32 reveal-section">
+                    <h2 class="text-4xl font-black mb-20 text-center tracking-tight text-text">Ciclo de regeneración
+                        textil</h2>
+                    <div class="flex flex-col md:flex-row items-stretch justify-between gap-4 max-w-6xl mx-auto">
+                        <div class="flex-1 flex flex-col md:flex-row items-center gap-4 step-item">
+                            <div class="relative bg-white border border-gray-100 rounded-3xl p-8 flex flex-col items-center text-center shadow-sm hover:border-brandGreen transition-all hover:-translate-y-1 w-full group"
+                                data-tooltip="Recolección de botellas de PET">
+                                <div
+                                    class="absolute -top-3 -right-3 w-10 h-10 bg-brandGreen rounded-full flex items-center justify-center text-sm font-black text-white shadow-md border-2 border-white">
+                                    1</div>
+                                <div
+                                    class="w-16 h-16 bg-brandGreen/5 rounded-2xl flex items-center justify-center mb-6">
+                                    <span class="material-symbols-outlined text-brandGreen text-4xl">recycling</span>
+                                </div>
+                                <h5 class="font-black text-lg mb-2 text-text">Recolección</h5>
+                                <p class="text-sm text-gray-500 leading-relaxed font-bold">Botellas PET post-consumo
+                                    rescatadas de vertederos.</p>
+                            </div>
+                            <div class="flex items-center justify-center text-brandGreen rotate-90 md:rotate-0">
+                                <span class="material-symbols-outlined text-3xl font-black">arrow_forward</span>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex flex-col md:flex-row items-center gap-4 step-item">
+                            <div
+                                class="relative bg-white border border-gray-100 rounded-3xl p-8 flex flex-col items-center text-center shadow-sm hover:border-brandGreen transition-all hover:-translate-y-1 w-full group">
+                                <div
+                                    class="absolute -top-3 -right-3 w-10 h-10 bg-brandGreen rounded-full flex items-center justify-center text-sm font-black text-white shadow-md border-2 border-white">
+                                    2</div>
+                                <div
+                                    class="w-16 h-16 bg-brandGreen/5 rounded-2xl flex items-center justify-center mb-6">
+                                    <span class="material-symbols-outlined text-brandGreen text-4xl">grid_guides</span>
+                                </div>
+                                <h5 class="font-black text-lg mb-2 text-text">Triturado</h5>
+                                <p class="text-sm text-gray-500 leading-relaxed font-bold">Limpieza y transformación en
+                                    escamas o 'flakes'.</p>
+                            </div>
+                            <div class="flex items-center justify-center text-brandGreen rotate-90 md:rotate-0">
+                                <span class="material-symbols-outlined text-3xl font-black">arrow_forward</span>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex flex-col md:flex-row items-center gap-4 step-item">
+                            <div
+                                class="relative bg-white border border-gray-100 rounded-3xl p-8 flex flex-col items-center text-center shadow-sm hover:border-brandGreen transition-all hover:-translate-y-1 w-full group">
+                                <div
+                                    class="absolute -top-3 -right-3 w-10 h-10 bg-brandGreen rounded-full flex items-center justify-center text-sm font-black text-white shadow-md border-2 border-white">
+                                    3</div>
+                                <div
+                                    class="w-16 h-16 bg-brandGreen/5 rounded-2xl flex items-center justify-center mb-6">
+                                    <span class="material-symbols-outlined text-brandGreen text-4xl">blur_on</span>
+                                </div>
+                                <h5 class="font-black text-lg mb-2 text-text">Extrusión</h5>
+                                <p class="text-sm text-gray-500 leading-relaxed font-bold">Fundido técnico para crear
+                                    pellets de polímero puro.</p>
+                            </div>
+                            <div class="flex items-center justify-center text-brandGreen rotate-90 md:rotate-0">
+                                <span class="material-symbols-outlined text-3xl font-black">arrow_forward</span>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex flex-col md:flex-row items-center gap-4 step-item">
+                            <div
+                                class="relative bg-white border border-gray-100 rounded-3xl p-8 flex flex-col items-center text-center shadow-sm hover:border-brandGreen transition-all hover:-translate-y-1 w-full group">
+                                <div
+                                    class="absolute -top-3 -right-3 w-10 h-10 bg-brandGreen rounded-full flex items-center justify-center text-sm font-black text-white shadow-md border-2 border-white">
+                                    4</div>
+                                <div
+                                    class="w-16 h-16 bg-brandGreen/5 rounded-2xl flex items-center justify-center mb-6">
+                                    <span class="material-symbols-outlined text-brandGreen text-4xl">waves</span>
+                                </div>
+                                <h5 class="font-black text-lg mb-2 text-text">Hilado</h5>
+                                <p class="text-sm text-gray-500 leading-relaxed font-bold">Producción de filamentos de
+                                    poliéster reciclado.</p>
+                            </div>
+                            <div class="flex items-center justify-center text-brandGreen rotate-90 md:rotate-0">
+                                <span class="material-symbols-outlined text-3xl font-black">arrow_forward</span>
+                            </div>
+                        </div>
+                        <div class="flex-1 step-item">
+                            <div
+                                class="relative bg-white border border-gray-100 rounded-3xl p-8 flex flex-col items-center text-center shadow-sm hover:border-brandGreen transition-all hover:-translate-y-1 w-full h-full group">
+                                <div
+                                    class="absolute -top-3 -right-3 w-10 h-10 bg-brandGreen rounded-full flex items-center justify-center text-sm font-black text-white shadow-md border-2 border-white">
+                                    5</div>
+                                <div
+                                    class="w-16 h-16 bg-brandGreen/5 rounded-2xl flex items-center justify-center mb-6">
+                                    <span class="material-symbols-outlined text-brandGreen text-4xl">texture</span>
+                                </div>
+                                <h5 class="font-black text-lg mb-2 text-text">Tejido</h5>
+                                <p class="text-sm text-gray-500 leading-relaxed font-bold">Construcción textil final
+                                    lista para diseño y corte.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-32 reveal-section">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl font-black mb-4 tracking-tight text-text uppercase">Impacto real en números
+                        </h2>
+                        <p class="text-gray-500 font-black tracking-widest text-xs uppercase">Sostenibilidad
+                            cuantificable para tu reporte de ESG</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                        <div
+                            class="bg-brandDeep text-white p-10 rounded-large relative overflow-hidden group min-h-[300px] flex flex-col justify-center">
+                            <div class="relative z-10 text-center">
+                                <p class="text-5xl lg:text-6xl font-black mb-4 tracking-tighter counter"
+                                    data-target="15">0</p>
+                                <p class="text-brandLime font-black text-lg leading-snug">Botellas PET (600ml)</p>
+                                <p class="text-sm text-white/60">rescatadas por cada metro de tela.</p>
+                            </div>
+                            <span
+                                class="material-symbols-outlined absolute -bottom-10 -right-10 text-[260px] opacity-[0.05] pointer-events-none transform rotate-12">recycling</span>
+                        </div>
+                        <div
+                            class="bg-white p-10 rounded-large border border-gray-100 shadow-sm flex flex-col justify-between group hover:border-brandGreen/30 transition-all">
+                            <div>
+                                <div
+                                    class="w-14 h-14 bg-brandGreen/10 rounded-2xl flex items-center justify-center text-brandGreen mb-8 group-hover:scale-110 transition-transform">
+                                    <span class="material-symbols-outlined text-3xl font-bold">water_drop</span>
+                                </div>
+                                <p class="text-5xl font-black mb-2 tracking-tighter text-text counter" data-target="30"
+                                    data-suffix="%">-0%</p>
+                                <p class="font-black text-2xl mb-2 text-text">Ahorro de Agua</p>
+                            </div>
+                            <p
+                                class="text-sm text-gray-400 font-black mt-4 border-t border-gray-100 pt-4 uppercase tracking-wider">
+                                Frente al poliéster virgen.</p>
+                        </div>
+                        <div
+                            class="bg-white p-10 rounded-large border border-gray-100 shadow-sm flex flex-col justify-between group hover:border-brandGreen/30 transition-all">
+                            <div>
+                                <div
+                                    class="w-14 h-14 bg-brandGreen/10 rounded-2xl flex items-center justify-center text-brandGreen mb-8 group-hover:scale-110 transition-transform">
+                                    <span class="material-symbols-outlined text-3xl font-bold">co2</span>
+                                </div>
+                                <p class="text-5xl font-black mb-2 tracking-tighter text-text counter" data-target="45"
+                                    data-suffix="%">-0%</p>
+                                <p class="font-black text-2xl mb-2 text-text">Emisiones CO2</p>
+                            </div>
+                            <p
+                                class="text-sm text-gray-400 font-black mt-4 border-t border-gray-100 pt-4 uppercase tracking-wider">
+                                Menor huella de carbono.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-32 max-w-4xl mx-auto reveal-section">
+                    <div class="bg-white p-12 rounded-large shadow-2xl shadow-brandGreen/5 border border-gray-100">
+                        <div class="flex items-center gap-4 mb-10">
+                            <div class="w-12 h-12 bg-brandGreen/20 rounded-2xl flex items-center justify-center">
+                                <span class="material-symbols-outlined text-text font-bold">calculate</span>
+                            </div>
+                            <h2 class="text-3xl font-black tracking-tight text-text">Calculadora de Peso y Consumo</h2>
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-8 mb-12">
+                            <div>
+                                <label
+                                    class="block text-sm font-black mb-3 text-gray-400 uppercase tracking-wider">Gramaje
+                                    (g/m²)</label>
+                                <input id="calc-gramaje"
+                                    class="w-full bg-gray-50 border-gray-100 rounded-2xl focus:ring-brandGreen focus:border-brandGreen p-4 font-bold"
+                                    placeholder="Ej: 210" type="number" />
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-sm font-black mb-3 text-gray-400 uppercase tracking-wider">Ancho
+                                    (m)</label>
+                                <input id="calc-ancho"
+                                    class="w-full bg-gray-50 border-gray-100 rounded-2xl focus:ring-brandGreen focus:border-brandGreen p-4 font-bold"
+                                    placeholder="Ej: 1.50" type="number" />
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-sm font-black mb-3 text-gray-400 uppercase tracking-wider">Metros
+                                    deseados</label>
+                                <input id="calc-metros"
+                                    class="w-full bg-gray-50 border-gray-100 rounded-2xl focus:ring-brandGreen focus:border-brandGreen p-4 font-bold"
+                                    placeholder="Ej: 100" type="number" />
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gray-50 p-8 rounded-3xl flex flex-col md:flex-row justify-between items-center gap-6 mb-10 border border-gray-100">
+                            <div>
+                                <p class="text-sm font-black text-gray-400 mb-1 uppercase tracking-widest">Peso estimado
+                                    total:</p>
+                                <p class="text-5xl font-black text-text" id="calc-result">0 <span
+                                        class="text-xl font-bold opacity-30 text-text">kg</span></p>
+                            </div>
+                            <button
+                                class="bg-brandGreen text-white px-10 py-4 rounded-full font-black text-lg shadow-lg shadow-brandGreen/20 hover:scale-[1.02] transition-transform"
+                                id="calc-btn">Calcular proyecto</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="grid lg:grid-cols-2 gap-12 mb-32 reveal-section" id="cotizar">
+                    <div class="bg-white p-12 rounded-large shadow-2xl shadow-brandGreen/5 border border-gray-100">
+                        <h3 class="text-3xl font-black mb-10 tracking-tight text-text">Solicita tu cotización</h3>
+                        <form class="space-y-8" id="quote-form">
+                            <div>
+                                <label
+                                    class="block text-sm font-black mb-3 text-gray-400 uppercase tracking-widest">¿Qué
+                                    te interesa?</label>
+                                <select id="form-interest"
+                                    class="w-full bg-gray-50 border-gray-100 rounded-2xl focus:ring-brandGreen focus:border-brandGreen py-4 px-6 font-bold">
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="solo_tela">Solo tela (metros o rollos)</option>
+                                    <option value="producto_terminado">Producto terminado (por proyecto)</option>
+                                </select>
+                            </div>
+                            <div id="fields-tela" class="hidden space-y-4">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <input placeholder="Gramaje"
+                                        class="w-full bg-gray-50 border-gray-100 rounded-2xl p-4 font-bold" />
+                                    <input placeholder="Cantidad"
+                                        class="w-full bg-gray-50 border-gray-100 rounded-2xl p-4 font-bold" />
+                                </div>
+                            </div>
+                            <div id="fields-producto" class="hidden space-y-4">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <input placeholder="Tipo de producto"
+                                        class="w-full bg-gray-50 border-gray-100 rounded-2xl p-4 font-bold" />
+                                    <input placeholder="Cantidad piezas" type="number"
+                                        class="w-full bg-gray-50 border-gray-100 rounded-2xl p-4 font-bold" />
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-6">
+                                <input
+                                    class="w-full bg-gray-50 border-gray-100 rounded-2xl focus:ring-brandGreen focus:border-brandGreen py-4 px-6 font-bold"
+                                    placeholder="Tu nombre" type="text" required />
+                                <input
+                                    class="w-full bg-gray-50 border-gray-100 rounded-2xl focus:ring-brandGreen focus:border-brandGreen py-4 px-6 font-bold"
+                                    placeholder="Tu email" type="email" required />
+                            </div>
+                            <textarea id="quote-message"
+                                class="w-full bg-gray-50 border-gray-100 rounded-2xl focus:ring-brandGreen focus:border-brandGreen py-4 px-6 font-bold"
+                                placeholder="Cuéntanos más sobre tu proyecto..." rows="4"></textarea>
+
+                            <!-- Updated WhatsApp Logic in main.js -->
+                            <button
+                                class="w-full bg-brandGreen text-white py-5 rounded-full font-black text-xl shadow-lg shadow-brandGreen/20 hover:scale-[1.01] transition-transform uppercase tracking-wider relative overflow-hidden"
+                                type="button" id="btn-whatsapp-send">
+                                <span class="relative z-10">Enviar por WhatsApp</span>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="space-y-8">
+                        <div class="bg-brandDeep text-white p-12 rounded-large relative overflow-hidden">
+                            <h4 class="font-black text-2xl mb-6 flex items-center gap-3 relative z-10">
+                                <span
+                                    class="material-symbols-outlined text-brandLime text-3xl font-bold">chat_bubble</span>
+                                Atención vía WhatsApp
+                            </h4>
+                            <p class="text-sm text-white/60 mb-8 relative z-10 font-bold uppercase tracking-wider">Usa
+                                esta estructura para recibir una respuesta técnica más rápida:</p>
+                            <div class="bg-white/5 p-8 rounded-3xl font-mono text-sm leading-relaxed mb-8 border border-white/10 relative z-10"
+                                id="whatsapp-template">
+                                "Hola ECOAID, me interesa cotizar <span
+                                    class="text-brandLime font-black">[TIPO_DE_TELA]</span> para fabricar <span
+                                    class="text-brandLime font-black">[PRODUCTO]</span>. Mi proyecto requiere
+                                aproximadamente <span class="text-brandLime font-black">[METROS_O_CANTIDAD]</span>. ¿Me
+                                podrían dar costos y tiempos?"
+                            </div>
+                            <button
+                                class="flex items-center gap-3 font-black text-brandLime hover:text-white transition-colors relative z-10 group uppercase text-sm tracking-widest"
+                                id="copy-template-btn">
+                                <span
+                                    class="material-symbols-outlined text-xl group-hover:rotate-12 transition-transform">content_copy</span>
+                                Copiar mensaje plantilla
+                            </button>
+                            <div class="mt-8 pt-8 border-t border-white/10 relative z-10 text-center">
+                                <p class="text-sm font-black text-brandLime tracking-widest uppercase">Por un mundo más
+                                    verde.</p>
+                            </div>
+                            <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-brandGreen/10 rounded-full blur-3xl">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div><!-- Closing Container for regular sections -->
+
+            <!-- Full Width "Imagine" Section -->
+            <section class="w-full bg-brandDeep py-20 lg:py-28 text-center text-white relative overflow-hidden mb-0">
+                <div class="container mx-auto px-6 relative z-10 max-w-3xl">
+                    <h2 class="text-4xl lg:text-6xl font-black mb-10 tracking-tight leading-[1.1]">Si puedes imaginarlo,
+                        podemos ayudarte a empezar por el material correcto.</h2>
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                        <!-- Updated ID for JS interaction -->
+                        <button
+                            class="bg-brandGreen text-white px-12 py-5 rounded-full font-black text-xl hover:scale-105 transition-transform shadow-xl shadow-brandGreen/10 uppercase tracking-wider trigger-scroll-cotizar">Empezar
+                            ahora</button>
+                        <button id="btn-solicitar-muestras"
+                            class="border-2 border-white/20 px-12 py-5 rounded-full font-black text-xl hover:bg-white hover:text-text transition-all uppercase tracking-wider">Solicitar
+                            muestras</button>
+                    </div>
+                </div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-5 pointer-events-none">
+                    <span class="material-symbols-outlined text-[600px]">language</span>
+                </div>
+            </section>
+        </main>
+
+        <section class="mb-32 max-w-4xl mx-auto reveal-section relative z-20 bg-white p-8 rounded-3xl shadow-xl mt-24"
+            id="faq">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black mb-4 tracking-tight text-text uppercase">Preguntas Frecuentes
+                </h2>
+                <p class="text-gray-500 font-black tracking-widest text-xs uppercase">Resolviendo tus dudas
+                    sobre sostenibilidad y pedidos</p>
+            </div>
+            <!-- Updated FAQ Items -->
+            <div class="space-y-4">
+                <details
+                    class="group bg-gray-50 rounded-2xl border border-gray-100 shadow-sm transition-all hover:border-brandGreen/50 open:bg-brandDeep open:border-brandGreen2">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none group-open:text-brandLime">
+                        <span class="text-lg font-black text-text group-open:text-brandLime transition-colors">¿Qué
+                            tipos de tela manejan?</span>
+                        <span
+                            class="material-symbols-outlined text-brandGreen expand-icon transition-transform duration-300 group-open:rotate-180 group-open:text-brandLime">expand_more</span>
+                    </summary>
+                    <div
+                        class="px-6 pb-6 text-gray-600 font-medium leading-relaxed group-open:text-white/90 overflow-hidden">
+                        Manejamos sarga, loneta y tejidos especializados para uniformes industriales, todos con
+                        certificación GRS.
+                    </div>
+                </details>
+                <details
+                    class="group bg-gray-50 rounded-2xl border border-gray-100 shadow-sm transition-all hover:border-brandGreen/50 open:bg-brandDeep open:border-brandGreen2">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none group-open:text-brandLime">
+                        <span class="text-lg font-black text-text group-open:text-brandLime transition-colors">¿Las
+                            muestras tienen costo?</span>
+                        <span
+                            class="material-symbols-outlined text-brandGreen expand-icon transition-transform duration-300 group-open:rotate-180 group-open:text-brandLime">expand_more</span>
+                    </summary>
+                    <div
+                        class="px-6 pb-6 text-gray-600 font-medium leading-relaxed group-open:text-white/90 overflow-hidden">
+                        Sí, las muestras tienen un costo de recuperación más gastos de envío.
+                    </div>
+                </details>
+                <details
+                    class="group bg-gray-50 rounded-2xl border border-gray-100 shadow-sm transition-all hover:border-brandGreen/50 open:bg-brandDeep open:border-brandGreen2">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none group-open:text-brandLime">
+                        <span class="text-lg font-black text-text group-open:text-brandLime transition-colors">¿Cuál es
+                            el pedido mínimo?</span>
+                        <span
+                            class="material-symbols-outlined text-brandGreen expand-icon transition-transform duration-300 group-open:rotate-180 group-open:text-brandLime">expand_more</span>
+                    </summary>
+                    <div
+                        class="px-6 pb-6 text-gray-600 font-medium leading-relaxed group-open:text-white/90 overflow-hidden">
+                        Vendemos desde 1 metro lineal. Para proyectos de producto terminado, el mínimo depende
+                        del diseño.
+                    </div>
+                </details>
+                <details
+                    class="group bg-gray-50 rounded-2xl border border-gray-100 shadow-sm transition-all hover:border-brandGreen/50 open:bg-brandDeep open:border-brandGreen2">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none group-open:text-brandLime">
+                        <span class="text-lg font-black text-text group-open:text-brandLime transition-colors">¿Entregan
+                            certificado GRS?</span>
+                        <span
+                            class="material-symbols-outlined text-brandGreen expand-icon transition-transform duration-300 group-open:rotate-180 group-open:text-brandLime">expand_more</span>
+                    </summary>
+                    <div
+                        class="px-6 pb-6 text-gray-600 font-medium leading-relaxed group-open:text-white/90 overflow-hidden">
+                        Sí, entregamos el Transaction Certificate (TC) para pedidos de volumen que lo requieran.
+                    </div>
+                </details>
+                <details
+                    class="group bg-gray-50 rounded-2xl border border-gray-100 shadow-sm transition-all hover:border-brandGreen/50 open:bg-brandDeep open:border-brandGreen2">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none group-open:text-brandLime">
+                        <span class="text-lg font-black text-text group-open:text-brandLime transition-colors">¿Tienen
+                            envíos internacionales?</span>
+                        <span
+                            class="material-symbols-outlined text-brandGreen expand-icon transition-transform duration-300 group-open:rotate-180 group-open:text-brandLime">expand_more</span>
+                    </summary>
+                    <div
+                        class="px-6 pb-6 text-gray-600 font-medium leading-relaxed group-open:text-white/90 overflow-hidden">
+                        Sí, realizamos envíos a todo el mundo.
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <footer class="bg-text py-20 relative z-10 border-t border-white/5">
+            <div class="container mx-auto px-6 grid md:grid-cols-4 gap-16">
+                <div class="col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <!-- Large Tree Icon in Footer -->
+                        <!-- Large Tree Icon in Footer -->
+                        <span class="material-symbols-outlined text-brandGreen text-9xl font-bold">park</span>
+                        <span class="text-3xl font-black tracking-tighter text-white uppercase">ECOAID</span>
+                    </div>
+                    <p class="text-white/60 max-w-sm font-bold leading-relaxed">Transformamos el plástico post-consumo
+                        en textiles de alta calidad para un futuro circular y responsable.</p>
+                </div>
+                <div>
+                    <h6 class="font-black text-white mb-8 uppercase tracking-widest text-xs">Empresa</h6>
+                    <ul class="space-y-4 text-sm font-black text-white/40 uppercase tracking-wider">
+                        <li><a class="hover:text-brandGreen transition-colors" href="#">Catálogo RPET</a></li>
+                        <li><a class="hover:text-brandGreen transition-colors" href="#">Fabricación</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-black text-white mb-8 uppercase tracking-widest text-xs">Síguenos</h6>
+                </div>
+            </div>
+            <div
+                class="container mx-auto px-6 mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[11px] font-black uppercase tracking-[0.2em] text-white/30">
+                <p>© 2025 ECOAID S.A. de C.V. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

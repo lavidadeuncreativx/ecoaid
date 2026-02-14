@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #F4F7F1;
+  --surface: #FFF;
+  --surface2: #ECF6E7;
+  --text: #0F2216;
+  --text2: #2E3B2F;
+  --muted: #6A776E;
+  --border: #D9E6D6;
+  --borderStrong: #C6DBC3;
+
+  --brandGreen: #2F7D32;
+  --brandGreen2: #4AAE2B;
+  --brandLime: #B7E51E;
+  --brandDeep: #0B2A17;
+
+  --accentBlue: #2D6CDF;
+  --accentPurple: #6A4CFF;
+  --accentRed: #E53935;
+  --accentOrange: #FB8C00;
+  --accentYellow: #FDD835;
+
+  --focus: rgba(183, 229, 30, .55);
+
+  --shadowSm: 0 1px 2px rgba(15, 34, 22, .06);
+  --shadowMd: 0 12px 30px rgba(15, 34, 22, .10);
+  --shadowLg: 0 20px 60px rgba(15, 34, 22, .16);
+}
+
+@layer base {
+
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+}
+
+/* Custom Utilities */
+.glass {
+  background: rgba(244, 247, 241, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.scrolled-header {
+  background: rgba(244, 247, 241, 0.86);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.organic-bg {
+  /* Removed as per request */
+  background-image: none;
+}
+
+.fabric-texture-banner {
+  background-image: linear-gradient(rgba(18, 51, 31, 0.94), rgba(18, 51, 31, 0.94)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuB1iIhM8NzKygF1_d0poOOfMYP2INjFOpFAAeRLk6wDADPKWFJi9Q7BjbVdC92zMQuQ-B9zOXW1pDsmkt9iT4C7oc25Ion8IQGAwSf43VAGHYJRsZdUx0Yw2Z-OewJhC7JHqjDOSNy4P9vXogcQpnxN7hlLH2hEpHMdpmZAlOePjQtPZgBeHVxZVzkc1gj_sX-CrmOq1agzWOrekfME1g59Dks_GKoo6KFjZjwc01Jv4EkwuUUucIDNdxh5XzfJpSPy0dPTIQ2k4DI);
+  background-repeat: repeat;
+}
+
+.embroidered-text {
+  color: #FFFFFF;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4), -0.5px -0.5px 0 rgba(255, 255, 255, 0.1), 0 0 1px rgba(255, 255, 255, 0.2);
+  letter-spacing: -0.01em;
+  position: relative;
+  display: inline-block;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
