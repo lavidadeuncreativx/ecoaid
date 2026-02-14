@@ -150,16 +150,22 @@ const fieldsProducto = document.getElementById('fields-producto')
 if (interestSelect) {
   interestSelect.addEventListener('change', (e) => {
     const value = e.target.value
+    const msgArea = document.getElementById('quote-message')
+
+    // Reset fields visibility
+    fieldsTela.classList.add('hidden')
+    fieldsProducto.classList.add('hidden')
 
     if (value === 'solo_tela') {
       fieldsTela.classList.remove('hidden')
-      fieldsProducto.classList.add('hidden')
+      if (msgArea) msgArea.placeholder = "Cuéntanos más sobre tu proyecto..."
     } else if (value === 'producto_terminado') {
-      fieldsTela.classList.add('hidden')
       fieldsProducto.classList.remove('hidden')
+      if (msgArea) msgArea.placeholder = "Cuéntanos más sobre tu proyecto..."
+    } else if (value === 'muestras') {
+      if (msgArea) msgArea.placeholder = "Hola, me interesa solicitar muestras de tela. Necesito que sean..."
     } else {
-      fieldsTela.classList.add('hidden')
-      fieldsProducto.classList.add('hidden')
+      if (msgArea) msgArea.placeholder = "Cuéntanos más sobre tu proyecto..."
     }
   })
 }
@@ -267,13 +273,18 @@ if (sampleBtn) {
     // Scroll to form
     lenis.scrollTo('#cotizar', { offset: -100 })
 
-    // Pre-fill placeholder
-    const msgArea = document.getElementById('quote-message')
-    if (msgArea) {
-      msgArea.value = "" // Clear any existing text
-      msgArea.placeholder = "Hola, me interesa solicitar muestras de tela. Necesito que sean..."
-      msgArea.focus()
+    // Select option and trigger change (which handles placeholder)
+    const select = document.getElementById('form-interest')
+    if (select) {
+      select.value = 'muestras'
+      select.dispatchEvent(new Event('change'))
     }
+
+    // Focus message area
+    setTimeout(() => {
+      const msgArea = document.getElementById('quote-message')
+      if (msgArea) msgArea.focus()
+    }, 100)
   })
 }
 
