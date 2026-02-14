@@ -273,118 +273,6 @@ if (sampleBtn) {
     // Scroll to form
     lenis.scrollTo('#cotizar', { offset: -100 })
 
-    // Product Modal Logic
-    const modal = document.getElementById('product-modal')
-    const modalBackdrop = document.getElementById('modal-backdrop')
-    const modalCloseBtn = document.getElementById('modal-close')
-    const modalContent = document.getElementById('modal-content')
-    const modalImage = document.getElementById('modal-image')
-    const modalTitle = document.getElementById('modal-title')
-    const modalDesc = document.getElementById('modal-description')
-    const modalPrev = document.getElementById('modal-prev')
-    const modalNext = document.getElementById('modal-next')
-    const modalDots = document.getElementById('modal-dots')
-
-    let currentImages = []
-    let currentImageIndex = 0
-
-    function openModal(title, description, images) {
-      currentImages = images
-      currentImageIndex = 0
-
-      modalTitle.textContent = title
-      modalDesc.textContent = description
-
-      updateModalImage()
-
-      modal.classList.remove('hidden')
-      // Small delay to allow transition
-      setTimeout(() => {
-        modal.classList.remove('opacity-0')
-        modalContent.classList.remove('scale-95')
-        modalContent.classList.add('scale-100')
-      }, 10)
-
-      document.body.style.overflow = 'hidden' // Prevent background scrolling
-    }
-
-    function closeModal() {
-      modal.classList.add('opacity-0')
-      modalContent.classList.remove('scale-100')
-      modalContent.classList.add('scale-95')
-
-      setTimeout(() => {
-        modal.classList.add('hidden')
-        document.body.style.overflow = ''
-      }, 300)
-    }
-
-    function updateModalImage() {
-      // Fade out
-      modalImage.style.opacity = '0'
-
-      setTimeout(() => {
-        modalImage.src = currentImages[currentImageIndex]
-        // Fade in
-        modalImage.style.opacity = '1'
-      }, 200)
-
-      // Update Buttons state
-      modalPrev.disabled = currentImages.length <= 1
-      modalNext.disabled = currentImages.length <= 1
-
-      // Update Dots
-      modalDots.innerHTML = currentImages.map((_, index) => `
-    <button class="w-2 h-2 rounded-full transition-colors ${index === currentImageIndex ? 'bg-brandGreen' : 'bg-gray-300'}" 
-            onclick="goToImage(${index})"></button>
-  `).join('')
-    }
-
-    function nextImage() {
-      currentImageIndex = (currentImageIndex + 1) % currentImages.length
-      updateModalImage()
-    }
-
-    function prevImage() {
-      currentImageIndex = (currentImageIndex - 1 + currentImages.length) % currentImages.length
-      updateModalImage()
-    }
-
-    // Global function for dots
-    window.goToImage = (index) => {
-      currentImageIndex = index
-      updateModalImage()
-    }
-
-    // Event Listeners for Catalog Items
-    document.querySelectorAll('.catalog-item').forEach(item => {
-      item.addEventListener('click', () => {
-        const title = item.getAttribute('data-title')
-        const description = item.getAttribute('data-description')
-        try {
-          const images = JSON.parse(item.getAttribute('data-images'))
-          openModal(title, description, images)
-        } catch (e) {
-          console.error("Error parsing product images", e)
-        }
-      })
-    })
-
-    // Modal Event Listeners
-    if (modal) {
-      modalCloseBtn.addEventListener('click', closeModal)
-      modalBackdrop.addEventListener('click', closeModal)
-      modalPrev.addEventListener('click', prevImage)
-      modalNext.addEventListener('click', nextImage)
-
-      // Keyboard navigation
-      document.addEventListener('keydown', (e) => {
-        if (modal.classList.contains('hidden')) return
-        if (e.key === 'Escape') closeModal()
-        if (e.key === 'ArrowLeft') prevImage()
-        if (e.key === 'ArrowRight') prevImage() // Corrected: should be prevImage()
-      })
-    }
     const select = document.getElementById('form-interest')
     if (select) {
       select.value = 'muestras'
@@ -399,7 +287,120 @@ if (sampleBtn) {
   })
 }
 
-// --- 13. SMOOTH FAQ ACCORDION ---
+// --- 13. PRODUCT MODAL LOGIC (GLOBAL) ---
+const modal = document.getElementById('product-modal')
+const modalBackdrop = document.getElementById('modal-backdrop')
+const modalCloseBtn = document.getElementById('modal-close')
+const modalContent = document.getElementById('modal-content')
+const modalImage = document.getElementById('modal-image')
+const modalTitle = document.getElementById('modal-title')
+const modalDesc = document.getElementById('modal-description')
+const modalPrev = document.getElementById('modal-prev')
+const modalNext = document.getElementById('modal-next')
+const modalDots = document.getElementById('modal-dots')
+
+let currentImages = []
+let currentImageIndex = 0
+
+function openModal(title, description, images) {
+  currentImages = images
+  currentImageIndex = 0
+
+  modalTitle.textContent = title
+  modalDesc.textContent = description
+
+  updateModalImage()
+
+  modal.classList.remove('hidden')
+  // Small delay to allow transition
+  setTimeout(() => {
+    modal.classList.remove('opacity-0')
+    modalContent.classList.remove('scale-95')
+    modalContent.classList.add('scale-100')
+  }, 10)
+
+  document.body.style.overflow = 'hidden' // Prevent background scrolling
+}
+
+function closeModal() {
+  modal.classList.add('opacity-0')
+  modalContent.classList.remove('scale-100')
+  modalContent.classList.add('scale-95')
+
+  setTimeout(() => {
+    modal.classList.add('hidden')
+    document.body.style.overflow = ''
+  }, 300)
+}
+
+function updateModalImage() {
+  // Fade out
+  modalImage.style.opacity = '0'
+
+  setTimeout(() => {
+    modalImage.src = currentImages[currentImageIndex]
+    // Fade in
+    modalImage.style.opacity = '1'
+  }, 200)
+
+  // Update Buttons state
+  modalPrev.disabled = currentImages.length <= 1
+  modalNext.disabled = currentImages.length <= 1
+
+  // Update Dots
+  modalDots.innerHTML = currentImages.map((_, index) => `
+    <button class="w-2 h-2 rounded-full transition-colors ${index === currentImageIndex ? 'bg-brandGreen' : 'bg-gray-300'}" 
+            onclick="goToImage(${index})"></button>
+  `).join('')
+}
+
+function nextImage() {
+  currentImageIndex = (currentImageIndex + 1) % currentImages.length
+  updateModalImage()
+}
+
+function prevImage() {
+  currentImageIndex = (currentImageIndex - 1 + currentImages.length) % currentImages.length
+  updateModalImage()
+}
+
+// Global function for dots
+window.goToImage = (index) => {
+  currentImageIndex = index
+  updateModalImage()
+}
+
+// Event Listeners for Catalog Items
+document.querySelectorAll('.catalog-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const title = item.getAttribute('data-title')
+    const description = item.getAttribute('data-description')
+    try {
+      const images = JSON.parse(item.getAttribute('data-images'))
+      openModal(title, description, images)
+    } catch (e) {
+      console.error("Error parsing product images", e)
+    }
+  })
+})
+
+// Modal Event Listeners
+if (modal) {
+  modalCloseBtn.addEventListener('click', closeModal)
+  modalBackdrop.addEventListener('click', closeModal)
+  modalPrev.addEventListener('click', prevImage)
+  modalNext.addEventListener('click', nextImage)
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (modal.classList.contains('hidden')) return
+    if (e.key === 'Escape') closeModal()
+    if (e.key === 'ArrowLeft') prevImage()
+    if (e.key === 'ArrowRight') nextImage()
+  })
+}
+
+// --- 14. SMOOTH FAQ ACCORDION ---
 const faqs = document.querySelectorAll("#faq details");
 
 faqs.forEach((detail) => {
@@ -461,4 +462,3 @@ faqs.forEach((detail) => {
     }
   });
 });
-
